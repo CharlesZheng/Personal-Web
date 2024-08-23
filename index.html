@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charles' Personal Website</title>
+    <link rel="stylesheet" href="Style.css" />
+    <script src="https://kit.fontawesome.com/ba86a6abae.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Image/Name Logo.webp" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work Experiences</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Faculty of Science/Coop program</p>
+          <h1>
+            Hi, I'm <span>Charles</span> <br/>UBC Student, Major in Computer Science
+          </h1>
+        </div>
+      </div>
+      <!-- About -->
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class= "about-col-1">
+            <img src="Image/IMG_3423 2.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>  I am Charles Zheng, a final-year Computer Science major at the University of British Columbia (UBC).
+               My coursework includes Java, Probability Theory, HTML, Statistics with R, C++, SQL, and JavaScript.
+              I have developed an event organization system using Java, worked with Oracle Database to design and implement schemas, 
+              and created heart disease prediction models using R studio. My experience includes roles as an Event Manager for the UBC Boardgame Club, 
+              a programming instructor in China, and a Learning Tech Rover at UBC.</p>
+
+            <div class= "tab-titles">
+              <p class= "tab-links active-link" onclick="opentab('skills')"> Skills</p>
+              <p class= "tab-links" onclick="opentab('experience')"> Expeience</p>
+              <p class= "tab-links" onclick="opentab('projects')"> Projects</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>App Development</span><br> Created interfaces and functionalitiesfor an event management system.</li>
+                <li><span>Web Development </span><br> Designing Web/App interface by using HTML CSS and JavaScript </li>
+                <li><span>Database Managemen</span><br> Designed, implemented, and connected databases using SQL and Oracle </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Event Manager, Boardgame Club UBC (Aug 2020 - Oct 2022)</span><br> Organized events, collaborated with club members and sponsors, and managed day-to-day activities. </li>
+                <li><span>Instructor, Weifang, Shandong, China (May 2023 - July 2023)</span><br> Developed and taught programming courses in HTML and C, guided students in projects, and engaged with parents.</li>
+                <li><span>Learning Tech Rover, UBC (Jan 2024 - Aug 2024, Ongoing)</span><br> Provided helpdesk support, developed educational websites, and produced video tutorials. </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+              <ul>
+                <li><span>Event Organization Operational System </span><br> Developed user-friendly interfaces and functionalities using Java. </li>
+                <li><span>Oracle Database </span><br> Designed and implemented database schemas, integrating with user platforms via GUI, JDBC, and PHP.</li>
+                <li><span>Heart Disease Prediction</span><br> Used R Studio for data preprocessing, visualization, and predictive modeling. </li>
+                <li><span>Personal Website Design</span><br> Created a responsive personal portfolio website using HTML, CSS, and JavaScript, integrating Google Sheets for data management.</li>
+              </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- services -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>A brief overview of a recruitment website, highlighting company roles, training, and a user-friendly interface with animations and small-screen compatibility.</p>
+        <a href="https://charleszheng.github.io/Art-ISIT-Website/" class="hover-yellow btn1"> Learn more</a>
+      </div>
+
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+        <h2>Software Development</h2>
+        <p>
+          I researched the market need for an event organization system, developed a complex interface in Java with load and save functions, and implemented user-friendly features like participant tracking and event fund allocation.</p>
+        <a href="https://github.com/CharlesZheng/Party-planner" class="hover-yellow btn1"> Learn more</a>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-crop"></i>
+        <h2>Data Analysis</h2>
+        <p>Heart disease prediction model using R Studio, featuring KNN optimization, data preprocessing, and visualizations for accurate symptom-based predictions.</p>
+        <a href="https://github.com/CharlesZheng/Heart-disease-prediction" class="hover-yellow btn1"> Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio">
+<div class="container">
+  <h1 class="sub-title">My Work</h1>
+  <div class="worklist">
+    <div class="work">
+      <img src="Image/Art Logo.png">
+      <div class="layer">
+        <h3> UBC Art ISIT</h3>
+        <p> As a Learning Tech Rover at UBC, I excelled in customer service and helpdesk support, effectively communicating with faculty. I developed teaching-focused websites using HTML, CSS, and JavaScript, and created video tutorials with Camtasia, along with graphic editing in Adobe Photoshop.</p>
+        <a href="https://charleszheng.github.io/Art-ISIT-website1"><i class="fa-solid fa-link"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="Image/Youth education.png">
+      <div class="layer">
+        <h3> Youth Education</h3>
+        <p> High School Tutor specializing in science and Pre-Calculus 12, offering personalized instruction to small groups. Focused on mastering complex concepts and preparing middle school students for high school and university success.</p>
+        <a href="#"><i class="fa-solid fa-link"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="Image/Teaching coding.png">
+      <div class="layer">
+        <h3> Lebo</h3>
+        <p> As an Instructor in Weifang, Shandong, I created a programming curriculum in HTML and C for middle school students, adapting lessons to their varying skills. I also engaged parents on the value of coding and led students through projects showcased to over 100 parents, demonstrating their progress and skills.</p>
+        <a href="#"><i class="fa-solid fa-link"></i></a>
+      </div>
+    </div>
+  </div>
+  <a href="Image/charles cv.pdf" download class="btn"> See more</a>
+</div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"> Contact Me</h1>
+        <p><i class="fa-regular fa-envelope"></i>Charleszheng0114@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>12369899610</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/charles.zheng.39750"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/charles_zhengg/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="Image/Weichat.JPG"><i class="fa-brands fa-weixin"></i></a>
+        </div>
+        <a href="Image/charles cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit"class= "btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+         tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right="0";
+    }
+    function closemenu(){
+      sidemenu.style.right="-200px";
+    }
+  </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyPN7_vuHUgoZhw_JUYc0t3jU3lFGLhT0vEy_gApk65LaEbqS0oZo7lKFRaz6tHVgrK/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
